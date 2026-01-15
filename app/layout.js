@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import LayoutCompo from "./LayoutCompo";
 
 
 export const metadata = {
@@ -14,9 +15,10 @@ export default function RootLayout({ children }) {
       <body
  
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <LayoutCompo >
+
+          {children}
+        </LayoutCompo>
       </body>
     </html>
   );
